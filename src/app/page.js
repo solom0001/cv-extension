@@ -14,7 +14,7 @@ export default function Home() {
       <section className="grid grid-cols-[0.2fr_minmax(0,1200px)_0.2fr] lg:grid-cols-[1fr_minmax(0,1200px)_1fr] [&>*]:col-start-2 [&>*]:mt-12 gap-3 ">
         <div className="lg:grid lg:grid-cols-2 flex flex-col">
           <div className="pfPicBackScreen w-full flex justify-center items-center ">
-            <Image id="mePic" src="/mebackgroundless.png" alt="Profile Picture" width={500} height={500} className="mx-auto object-cover" />
+            <Image id="mePic" loading="eager" src="/mebackgroundless.png" alt="Profile Picture" width={500} height={500} className="mx-auto object-cover" />
           </div>
           <div className="flex flex-col ">
             <ScrollAniDiv>
