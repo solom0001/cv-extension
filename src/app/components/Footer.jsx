@@ -2,9 +2,9 @@
 
 const Footer = () => {
   return (
-    <div id="foot" className="p-6 flex justify-center items-center border-t-1 mt-16">
-      <footer className="w-[100%] lg:w-[50%] flex flex-col items-center gap-8">
-        <div className="w-full lg:flex grid grid-cols-2 gap-4 justify-around gap-8 [&>*]:max-w-full">
+    <div id="foot" className="p-6 flex justify-center items-center border-t mt-16">
+      <footer className="w-full lg:w-1/2 flex flex-col items-center gap-8">
+        <div className="w-full lg:flex grid grid-cols-2 gap-8 justify-around *:max-w-full">
           <p>
             <strong>Email:</strong>somw0001@stud.ek.dk
           </p>

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden p-0 lg:p-8 mt-8">
       <Hero />
-      <section className="grid grid-cols-[0.2fr_minmax(0,1200px)_0.2fr] lg:grid-cols-[1fr_minmax(0,1200px)_1fr] [&>*]:col-start-2 [&>*]:mt-12 gap-3 ">
+      <section className="grid grid-cols-[0.2fr_minmax(0,1200px)_0.2fr] lg:grid-cols-[1fr_minmax(0,1200px)_1fr] *:col-start-2 *:mt-12 gap-3 ">
         <div className="lg:grid lg:grid-cols-2 flex flex-col">
           <div className="pfPicBackScreen w-full flex justify-center items-center ">
             <Image id="mePic" loading="eager" src="/mebackgroundless.png" alt="Profile Picture" width={500} height={500} className="mx-auto object-cover" />
@@ -41,7 +41,7 @@ export default function Home() {
           <div className="flex flex-col text-center">
             <h3 className="">Mig men som moodboard</h3>
             <div className="lg:grid lg:grid-cols-1 flex flex-col gap-4 mt-8 items-center p-4">
-              <div className="text-gray-400 text-left flex flex-col gap-2  order-2 lg:order-1 max-w-[100%]">
+              <div className="text-gray-400 text-left flex flex-col gap-2 order-2 lg:order-1 max-w-full">
                 <h3 className="text-accent-1">Relevante billede kilder:</h3>
                 <p className="text-xs w-[40ch]">Stephen Currypic: https://www.flickr.com/photos/mattbritt00/8561855249/in/photostream/</p>
                 <p className="text-xs">Black/white Naruto: https://www.flickr.com/photos/44124390434@N01/338628</p>

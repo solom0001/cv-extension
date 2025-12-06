@@ -9,7 +9,6 @@ const List = () => {
       transition: {
         staggerChildren: 0.4,
         delayChildren: 0,
-        
       },
     },
   };
@@ -36,10 +35,10 @@ const List = () => {
       transition={{
         repeat: Infinity,
         repeatType: "reverse",
-        repeatDelay: 0.7, 
-        duration:1,
+        repeatDelay: 0.7,
+        duration: 1,
       }}
-      className="flex flex-col [&>*]:p-2 "
+      className="flex flex-col *:p-2 "
     >
       <motion.li variants={liVariants}>
         <h3 className="text-lg font-semibold">Figma</h3>

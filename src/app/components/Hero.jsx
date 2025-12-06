@@ -41,8 +41,8 @@ const Hero = () => {
      after:bottom-0
      after:right-0
     
-     after:w-[20px]
-     after:h-[20px]
+     after:w-5
+     after:h-5
      after:border-b-2
      after:border-r-2
      after:border-(--primary)
@@ -51,8 +51,8 @@ const Hero = () => {
      before:absolute
      before:top-0
      before:left-0
-     before:w-[20px]
-     before:h-[20px]
+     before:w-5
+     before:h-5
      before:border-t-2
      before:border-l-2
      before:border-(--primary)
@@ -70,7 +70,7 @@ const Hero = () => {
         </div>
       </motion.div>
       <motion.div variants={myVariants} initial="start2" animate="end2" transition={{ duration: 0.5, delay: 0.8 }} className="w-fit flex items-center p-4 header-back">
-        <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.2 }} className="m-4 grid grid-cols-1 [&>*]:col-start-1 [&>*]:row-start-1 items-center ">
+        <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.2 }} className="m-4 grid grid-cols-1 *:col-start-1 *:row-start-1 items-center ">
           <div>
             <Image src="SVG/asset.svg" width={500} height={500} alt="background svg" className="w-full h-full object-cover" />
           </div>
