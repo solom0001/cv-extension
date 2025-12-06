@@ -71,7 +71,7 @@ const PastWork = ({ desc, date, title, link, tag, img, screen }) => {
                   Besøg
                 </a>
               </div>
-              <span className="flex flex-col flex-1 p-4 bg-white/50 overflow-y-scroll">
+              <span className="flex flex-col flex-1 p-4 bg-white overflow-y-scroll">
                 <h2 className="">{title}</h2>
                 <p>{desc}</p>
               </span>
