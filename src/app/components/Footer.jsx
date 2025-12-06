@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div id="foot" className="p-6 flex justify-center items-center border-t mt-16">
       <footer className="w-full lg:w-1/2 flex flex-col items-center gap-8">
-        <div className="w-full lg:flex grid grid-cols-2 gap-8 justify-around *:max-w-full">
+        <div className="w-full lg:flex grid grid-cols-2 gap-8 justify-around *:max-w-full *:mx-auto">
           <p>
             <strong>Email:</strong>somw0001@stud.ek.dk
           </p>
@@ -14,9 +14,12 @@ const Footer = () => {
           <a href="https://github.com/solom0001/cv-extension" className="text-accent-2 underline font-bold">
             Denne Sides Git Repo
           </a>
-          <a href="/newCVsolomon.pdf" target="_blank" className="text-accent-2 underline font-bold">
-            CV
-          </a>
+          <span className="flex flex-nowrap items-baseline">
+            <p className="font-bold">Mit-</p>
+            <a href="/newCVsolomon.pdf" target="_blank" className="text-accent-2 underline font-bold">
+              CV
+            </a>
+          </span>
         </div>
 
         <div className="text-center">

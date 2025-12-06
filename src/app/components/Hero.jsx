@@ -6,7 +6,8 @@ import Image from "next/image";
 import DownBut from "./DownBut";
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ maxWidth: 888 });
+  const isMobile = useMediaQuery({ maxWidth: 689 });
+  const isTablet = useMediaQuery({ minWidth: 690, maxWidth: 1024 });
 
   const myVariants = {
     start: {
@@ -15,26 +16,31 @@ const Hero = () => {
       scale: 1.6,
     },
     mobileStart: {
-      x: 0,
+      x: "80%",
+      y: "250%",
+      scale: 1.6,
+    },
+    tabletStart: {
+      x: "150%",
       y: "250%",
       scale: 1.6,
     },
     mobileEnd: {
-      x: 0,
-      y: 0,
+      x: "10%",
+      y: "5%",
       scale: 1,
     },
     end: {
       x: 0,
       y: 0,
-      scale: 0.6,
+      scale: 0.8,
     },
     start2: { x: "100%" },
     end2: { x: 0 },
   };
   return (
     <div
-      className="lg:h-[90vh] h-[70vh] lg:flex lg:flex-row  mx-4 sm:mx-1
+      className="lg:h-[90vh] md:h-[60vh] h-[70vh] lg:flex lg:flex-row  mx-4 sm:mx-1
     relative
      after:content-['']
      after:absolute
@@ -58,14 +64,14 @@ const Hero = () => {
      before:border-(--primary)
     "
     >
-      <motion.div variants={myVariants} initial={isMobile ? "mobileStart" : "start"} animate={isMobile ? "mobileEnd" : "end"} transition={{ duration: 0.5, delay: 0.8 }} className=" mb-4 sm:mb-0 text-center flex flex-col lg:flex-row items-center justify-self-start lg:border-r-2">
+      <motion.div variants={myVariants} initial={isMobile ? "mobileStart" : isTablet ? "tabletStart" : "start"} animate={isMobile ? "mobileEnd" : "end"} transition={{ duration: 0.5, delay: 0.8 }} className=" mb-4 sm:mb-0  flex flex-col lg:flex-row items-center justify-self-start lg:border-r-2">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }}>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold ">
             Solomon<br></br>Mwesigwa
           </h1>
         </motion.div>
 
-        <div className=" flex w-fit mt-4 md:ml-10 justify-self-center">
+        <div className=" flex w-fit mt-4 lg:ml-8">
           <DownBut title="Udforske" route="#mePic" />
         </div>
       </motion.div>

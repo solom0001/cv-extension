@@ -40,11 +40,11 @@ export default function Home() {
         <ScrollAniDiv>
           <div className="flex flex-col text-center">
             <h3 className="">Mig men som moodboard</h3>
-            <div className="lg:grid lg:grid-cols-1 flex flex-col gap-4 mt-8 items-center p-4">
-              <div className="text-gray-400 text-left flex flex-col gap-2 order-2 lg:order-1 max-w-full">
+            <div className="lg:grid lg:grid-cols-1 flex flex-col gap-4 mt-4 items-center p-4">
+              <div className="text-gray-400 text-left flex flex-col gap-2 order-2 lg:order-1 overflow-x-scroll">
                 <h3 className="text-accent-1">Relevante billede kilder:</h3>
-                <p className="text-xs w-[40ch]">Stephen Currypic: https://www.flickr.com/photos/mattbritt00/8561855249/in/photostream/</p>
-                <p className="text-xs">Black/white Naruto: https://www.flickr.com/photos/44124390434@N01/338628</p>
+                <p className="text-[0.5rem]!">Stephen Currypic: https://www.flickr.com/photos/mattbritt00/8561855249/in/photostream/</p>
+                <p className="text-[0.5rem]!">Black/white Naruto: https://www.flickr.com/photos/44124390434@N01/338628</p>
                 <p className="font-bold text-[#f78987]! mt-8">Lidt mere om hvem jeg er &#10511;</p>
               </div>
               <div className="md:col-span-3 order-1 lg:order-2">
@@ -58,13 +58,13 @@ export default function Home() {
           <h2 className="text-end mb-4">Hvad jeg kan</h2>
           <div id="HJK" className="lg:grid lg:grid-cols-3 gap-4 flex flex-col">
             <TextTemp title="Design" subtitle="Figma, UX og Adobe" description="Jeg har erfaring med at lave UX optimerede brugerflader og designs i Figma. Jeg har også kendskab til Adobe-pakken, herunder Premier Pro og illustrator og After Effects." description2="Jeg har igennem mit studie lærte igennem forskellige projekter hvilke betydning komponenter som farver, typografi og layout har for brugeroplevelsen." />
-            <div className="flex justify-center items-center text-accent-1-5 border-2 border-dashed border-(--accent-1)">
+            <div className="flex justify-center items-center text-accent-1-5">
               <StgLoopDiv />
             </div>
-            <div className="text-end">
+            <div className="text-end flex justify-end">
               <TextTemp
                 title="Webudvikling"
-                pushStyle="text-end!"
+                pushStyle="justify-end"
                 subtitle="HTML, CSS, JavaScript og React"
                 description="Jeg har erfaring med at bygge responsive og interaktive webapplikationer ved hjælp af HTML, CSS og JavaScript. Jeg har også arbejdet med React til at skabe dynamiske brugergrænseflader.
             Denne hjemmeside er bygget i Next.js som er baseret på React. Framer-motion er brugt til animationer og TailwindCSS til styling."
