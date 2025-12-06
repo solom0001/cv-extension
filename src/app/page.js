@@ -42,7 +42,7 @@ export default function Home() {
           <div className="flex flex-col">
             <h3 className="self-end">Mig men som moodboard</h3>
             <div className="grid lg:grid-cols-1 grid-rows-[1fr_auto] grid-cols-[0.5fr_6fr_0.5fr] *:col-start-2 gap-1 mt-4 lg:items-center ">
-              <div className="text-gray-400 text-left gap-2 order-2 lg:order-1 px-2 lg:mx-auto lg:col-start-1 ">
+              <div className="text-gray-400 text-left g order-2 lg:order-1 px-2 lg:mx-auto lg:col-start-1 ">
                 <h3 className="text-accent-1">Relevante billede kilder:</h3>
                 <p className="text-[0.5rem]!">Stephen Currypic: https://www.flickr.com/photos/mattbritt00/8561855249/in/photostream/</p>
                 <p className="text-[0.5rem]!">Black/white Naruto: https://www.flickr.com/photos/44124390434@N01/338628</p>
@@ -59,12 +59,12 @@ export default function Home() {
 
         <div className="lg:col-span-full! m-2 h-[fit] flex flex-col mt-12">
           <h2 className="text-end mb-4">Hvad jeg kan</h2>
-          <div id="HJK" className="lg:grid lg:grid-cols-3 gap-4 flex flex-col">
+          <div id="HJK" className="lg:grid lg:grid-cols-[1fr_0.5fr_1fr] gap-4 flex flex-col">
             <TextTemp title="Design" subtitle="Figma, UX og Adobe" description="Jeg har erfaring med at lave UX optimerede brugerflader og designs i Figma. Jeg har også kendskab til Adobe-pakken, herunder Premier Pro og illustrator og After Effects." description2="Jeg har igennem mit studie lærte igennem forskellige projekter hvilke betydning komponenter som farver, typografi og layout har for brugeroplevelsen." />
             <div className="flex justify-center items-center text-accent-1-5">
               <StgLoopDiv />
             </div>
-            <div className="text-end flex flex-col justify-end">
+            <div className="text-end! ">
               <TextTemp
                 title="Webudvikling"
                 pushStyle="w-full!"
@@ -77,18 +77,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 flex flex-col justify-center">
           <h3 className="self-center">Tidligere Projektor</h3>
           <ScrollAniDiv>
             <div
-              class="overflow-x-auto flex gap-4 snap-x snap-mandatory touch-pan-x p-4 carousel-container lg:grid 
-                lg:grid-cols-[1.5fr_2fr_1.5fr] lg:gap-4
+              class="overflow-x-auto flex gap-4 snap-x snap-mandatory touch-pan-x p-4 carousel-container xl:grid 
+                xl:grid-cols-3 xl:gap-4 xl:*:mx-auto
                 "
             >
-              <div class="flex-none w-4/5 snap-start p-2 shadow-md lg:order-2">
-                <PastWork img="/bareenProj.png" tag="Bareen X Design Museum" screen="Desktop" title="Bareen school Project" link="https://bareenxdesignmuseum.netlify.app/" desc="Her er et skoleprojekt, hvor jeg og min gruppe skulle selv vælge en collab for tøj mærke bareen og lave en hjemmeside til den fiktive samaerbejdet" date="12.04.2025" />
+              <div class="flex-none w-4/5 snap-start shadow-md xl:order-2">
+                <PastWork img="/bareenProj.png" tag="Bareen X Design Museum" screen="Desktop" title="Bareen skole Projekt" link="https://bareenxdesignmuseum.netlify.app/" desc="Her er et skoleprojekt, hvor jeg og min gruppe skulle selv vælge en collab for tøj mærke bareen og lave en hjemmeside til den fiktive samaerbejdet" date="12.04.2025" />
               </div>
-              <div class="flex-none w-4/5 snap-start  p-2 shadow-md lg:order-1">
+              <div class="flex-none w-4/5 snap-start shadow-md xl:order-1">
                 <PastWork
                   img="/familyfriends.png"
                   tag="Fetch fra API"
@@ -100,7 +100,7 @@ export default function Home() {
                   date="11.25.2025"
                 />
               </div>
-              <div class="flex-none w-4/5 snap-start p-2 shadow-md lg:order-3">
+              <div class="flex-none w-4/5 snap-start shadow-md xl:order-3">
                 <PastWork
                   img="/bareenFigma.png"
                   tag="Bareen Figma"
