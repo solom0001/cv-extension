@@ -155,6 +155,11 @@ p {
   border-radius: 8px;
 }
 
+.carousel-container {
+  scroll-padding-left: 1rem;
+  scroll-padding-right: 1rem;
+  scroll-behavior: smooth;
+}
 /* .header-back {
   background: url("/SVG/asset.svg");
   background-position: center;

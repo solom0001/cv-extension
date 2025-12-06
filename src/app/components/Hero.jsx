@@ -7,7 +7,7 @@ import DownBut from "./DownBut";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 689 });
-  const isTablet = useMediaQuery({ minWidth: 690, maxWidth: 1024 });
+  const isTablet = useMediaQuery({ minWidth: 690, maxWidth: 1000 });
 
   const myVariants = {
     start: {
@@ -16,13 +16,13 @@ const Hero = () => {
       scale: 1.6,
     },
     mobileStart: {
-      x: "80%",
-      y: "250%",
+      x: "75%",
+      y: "170%",
       scale: 1.6,
     },
     tabletStart: {
-      x: "150%",
-      y: "250%",
+      x: "140%",
+      y: "200%",
       scale: 1.6,
     },
     mobileEnd: {
@@ -64,7 +64,7 @@ const Hero = () => {
      before:border-(--primary)
     "
     >
-      <motion.div variants={myVariants} initial={isMobile ? "mobileStart" : isTablet ? "tabletStart" : "start"} animate={isMobile ? "mobileEnd" : "end"} transition={{ duration: 0.5, delay: 0.8 }} className=" mb-4 sm:mb-0  flex flex-col lg:flex-row items-center justify-self-start lg:border-r-2">
+      <motion.div variants={myVariants} initial={isMobile ? "mobileStart" : isTablet ? "tabletStart" : "start"} animate={isMobile ? "mobileEnd" : "end"} transition={{ duration: 0.5, delay: 0.8 }} className=" mb-4 sm:mb-0  flex flex-col lg:flex-row lg:items-center  justify-self-start lg:border-r-2">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }}>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold ">
             Solomon<br></br>Mwesigwa
@@ -81,7 +81,7 @@ const Hero = () => {
             <Image src="SVG/asset.svg" width={500} height={500} alt="background svg" className="w-full h-full object-cover" />
           </div>
           <div className="p-12">
-            <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold ">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold ">
               Multimedie-design<br></br>studerende
             </h1>
 
