@@ -48,7 +48,7 @@ export default function Home() {
                 <p className="font-bold text-[#f78987]! mt-8">Lidt mere om hvem jeg er &#10511;</p>
               </div>
               <div className="md:col-span-3 order-1 lg:order-2">
-                <Image src="/meMoodboard.png" alt="Moodboard" width={600} height={400} className="mx-auto" />
+                <Image loading="eager" src="/meMoodboard.png" alt="Moodboard" width={600} height={400} className="mx-auto" />
               </div>
             </div>
           </div>

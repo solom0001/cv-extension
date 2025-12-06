@@ -72,7 +72,7 @@ const Hero = () => {
       <motion.div variants={myVariants} initial="start2" animate="end2" transition={{ duration: 0.5, delay: 0.8 }} className="w-fit flex items-center p-4 header-back">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.2 }} className="m-4 grid grid-cols-1 [&>*]:col-start-1 [&>*]:row-start-1 items-center ">
           <div>
-            <Image src="SVG/asset.svg" width={500} height={500} className="w-full h-full object-cover" />
+            <Image src="SVG/asset.svg" width={500} height={500} alt="background svg" className="w-full h-full object-cover" />
           </div>
           <div className="p-12">
             <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold ">
