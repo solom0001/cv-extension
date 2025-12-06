@@ -72,7 +72,7 @@ const Hero = () => {
         </motion.div>
 
         <div className=" flex w-fit mt-4 lg:ml-8">
-          <DownBut title="Udforske" route="#mePic" />
+          <DownBut title="Udforsk" route="#mePic" />
         </div>
       </motion.div>
       <motion.div variants={myVariants} initial="start2" animate="end2" transition={{ duration: 0.5, delay: 0.8 }} className="w-fit flex items-center p-4 header-back">
@@ -92,7 +92,7 @@ const Hero = () => {
         </motion.div>
       </motion.div>
       <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1.5 }} className="flex flex-col self-start m-4">
-        <h2 className="text-xl lg:text-3xl">AKTIVT SØGER PRAKTIKSTED</h2>
+        <h2 className="text-xl lg:text-3xl">SØGER AKTIVT PRAKTIKSTED</h2>
         <p className="mt-1.5">Kan starte: 19.Januar 2026</p>
 
         <div className="mt-4">

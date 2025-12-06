@@ -25,10 +25,10 @@ export default function Home() {
                 description="
           Jeg er en 23-årig studerende på Erhvervsakademi København(EK).
           Det er ikke den første vidergående uddannelse, jeg har gået på, da jeg gik 3 semestre på
-          datamatikker kursen på Cph-Business Lyngby
+          datamatikker kurset på Cph-Business Lyngby
           "
                 description2="
-          Jeg går nu på 3.sem af min Multimedie-design studie hos EK, og kunne godt tænke mig at tag på et
+          Jeg går nu på 3.sem af mit Multimedie-design studie hos EK, og kunne godt tænke mig at tag på et
           praktikophold som front-end designer hos en brancheekspert!
           "
               />
@@ -60,7 +60,14 @@ export default function Home() {
         <div className="lg:col-span-full! m-2 h-[fit] flex flex-col mt-12">
           <h2 className="text-end mb-4">Hvad jeg kan</h2>
           <div id="HJK" className="lg:grid lg:grid-cols-[1fr_0.5fr_1fr] gap-4 flex flex-col">
-            <TextTemp title="Design" subtitle="Figma, UX og Adobe" description="Jeg har erfaring med at lave UX optimerede brugerflader og designs i Figma. Jeg har også kendskab til Adobe-pakken, herunder Premier Pro og illustrator og After Effects." description2="Jeg har igennem mit studie lærte igennem forskellige projekter hvilke betydning komponenter som farver, typografi og layout har for brugeroplevelsen." />
+            <TextTemp
+              title="Design"
+              subtitle="Figma, UX og Adobe"
+              description="Jeg har erfaring med at lave UX optimerede 
+            brugerflader og designs i Figma. 
+            Jeg har også kendskab til Adobe-pakken, herunder Premier Pro og illustrator og After Effects."
+              description2="Gennem mit studie har jeg opnået en lang række kompetencer gennem de projektopgaver, vi har arbejdet med. Jeg har blandt andet lært, hvilken betydning farver, typografi og layout har for en hjemmeside, og hvor vigtigt disse komponenter er for brugeroplevelsen."
+            />
             <div className="flex justify-center items-center text-accent-1-5">
               <StgLoopDiv />
             </div>
@@ -86,7 +93,7 @@ export default function Home() {
                 "
             >
               <div class="flex-none w-4/5 snap-start shadow-md xl:order-2">
-                <PastWork img="/bareenProj.png" tag="Bareen X Design Museum" screen="Desktop" title="Bareen skole Projekt" link="https://bareenxdesignmuseum.netlify.app/" desc="Her er et skoleprojekt, hvor jeg og min gruppe skulle selv vælge en collab for tøj mærke bareen og lave en hjemmeside til den fiktive samaerbejdet" date="25.04.2025" />
+                <PastWork img="/bareenProj.png" tag="Bareen X Design Museum" screen="Desktop" title="Bareen skole Projekt" link="https://bareenxdesignmuseum.netlify.app/" desc="Min gruppe og jeg skulle selv vælge en collab for tøj mærke bareen og lave en hjemmeside til den fiktive samaerbejdet" date="25.04.2025" />
               </div>
               <div class="flex-none w-4/5 snap-start shadow-md xl:order-1">
                 <PastWork
@@ -95,7 +102,7 @@ export default function Home() {
                   screen="Mobile"
                   title="Fetch og implementer et design"
                   link="https://family-friends-ochre.vercel.app/"
-                  desc="Her er et skoleprojekt,hvor jeg skulle fetch noget dummyJSON fra et
+                  desc="Jeg skulle fetch noget dummyJSON fra et
                     API og implementere det i et design på mobil tilstand vi blevet givet af læren. Vi skulle benytte react og tailwind og brug hooks som zustand"
                   date="11.25.2025"
                 />
@@ -107,7 +114,7 @@ export default function Home() {
                   screen="Desktop"
                   title="Eksempel på -fra Research til produkt"
                   link="https://www.figma.com/design/lsLgMduJXEElNPsEFLjRvF/Bareen-x-Designmuseum?node-id=13-3&t=PPVqwqYdD13wDl9y-1/"
-                  desc="Her er Figmaen til Bareen projektet vedhæftet, hvor min gruppe og jeg lavet research, udviklet design systemer og lavet user-tests
+                  desc="Figmaen til Bareen projektet vedhæftet, hvor min gruppe og jeg lavet research, udviklet design systemer og lavet user-tests
                     som førte til vores endelig projekt"
                   date="--.04.2025"
                 />

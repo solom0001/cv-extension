@@ -6,10 +6,10 @@ const Footer = () => {
       <footer className="w-full lg:w-1/2 flex flex-col items-center gap-8">
         <div className="w-full lg:flex grid grid-cols-2 gap-8 justify-around *:max-w-full *:mx-auto">
           <p>
-            <strong>Email:</strong>somw0001@stud.ek.dk
+            <strong>Email: </strong>somw0001@stud.ek.dk
           </p>
           <p>
-            <strong>Tlf.</strong> +45-41400063
+            <strong>Tlf.</strong> +45 41400063
           </p>
           <a href="https://github.com/solom0001/cv-extension" className="text-accent-2 underline font-bold">
             Denne Sides Git Repo
