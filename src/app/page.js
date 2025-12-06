@@ -67,7 +67,8 @@ export default function Home() {
             <div className="text-end! ">
               <TextTemp
                 title="Webudvikling"
-                pushStyle="w-full!"
+                
+                pushStyle="items-end text-end"
                 subtitle="HTML, CSS, JavaScript og React"
                 description="Jeg har erfaring med at bygge responsive og interaktive webapplikationer ved hjælp af HTML, CSS og JavaScript. Jeg har også arbejdet med React til at skabe dynamiske brugergrænseflader.
             Denne hjemmeside er bygget i Next.js som er baseret på React. Framer-motion er brugt til animationer og TailwindCSS til styling."
@@ -86,7 +87,7 @@ export default function Home() {
                 "
             >
               <div class="flex-none w-4/5 snap-start shadow-md xl:order-2">
-                <PastWork img="/bareenProj.png" tag="Bareen X Design Museum" screen="Desktop" title="Bareen skole Projekt" link="https://bareenxdesignmuseum.netlify.app/" desc="Her er et skoleprojekt, hvor jeg og min gruppe skulle selv vælge en collab for tøj mærke bareen og lave en hjemmeside til den fiktive samaerbejdet" date="12.04.2025" />
+                <PastWork img="/bareenProj.png" tag="Bareen X Design Museum" screen="Desktop" title="Bareen skole Projekt" link="https://bareenxdesignmuseum.netlify.app/" desc="Her er et skoleprojekt, hvor jeg og min gruppe skulle selv vælge en collab for tøj mærke bareen og lave en hjemmeside til den fiktive samaerbejdet" date="25.04.2025" />
               </div>
               <div class="flex-none w-4/5 snap-start shadow-md xl:order-1">
                 <PastWork
@@ -109,7 +110,7 @@ export default function Home() {
                   link="https://www.figma.com/design/lsLgMduJXEElNPsEFLjRvF/Bareen-x-Designmuseum?node-id=13-3&t=PPVqwqYdD13wDl9y-1/"
                   desc="Her er Figmaen til Bareen projektet vedhæftet, hvor min gruppe og jeg lavet research, udviklet design systemer og lavet user-tests
                     som førte til vores endelig projekt"
-                  date="12.04.2025"
+                  date="--.04.2025"
                 />
               </div>
             </div>
