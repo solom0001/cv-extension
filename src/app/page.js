@@ -67,7 +67,6 @@ export default function Home() {
             <div className="text-end! ">
               <TextTemp
                 title="Webudvikling"
-                
                 pushStyle="items-end text-end"
                 subtitle="HTML, CSS, JavaScript og React"
                 description="Jeg har erfaring med at bygge responsive og interaktive webapplikationer ved hjælp af HTML, CSS og JavaScript. Jeg har også arbejdet med React til at skabe dynamiske brugergrænseflader.
@@ -82,8 +81,8 @@ export default function Home() {
           <h3 className="self-center">Tidligere Projektor</h3>
           <ScrollAniDiv>
             <div
-              class="overflow-x-auto flex gap-4 snap-x snap-mandatory touch-pan-x p-4 carousel-container xl:grid 
-                xl:grid-cols-3 xl:gap-4 xl:*:mx-auto
+              class="overflow-x-auto flex gap-4 snap-x snap-mandatory  p-4 carousel-container xl:grid 
+                xl:grid-cols-3 xl:gap-4 xl:*:mx-auto [touch-action:pan-x pan-y]
                 "
             >
               <div class="flex-none w-4/5 snap-start shadow-md xl:order-2">
