@@ -21,7 +21,7 @@ const ScrollAniDiv = ({ children }) => {
   };
 
   return (
-    <motion.div ref={ref} variants={boxVariables} initial="hidden" animate={controls} className="p-6">
+    <motion.div ref={ref} variants={boxVariables} initial="hidden" animate={controls} className="">
       {children}
     </motion.div>
   );

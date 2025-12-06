@@ -7,7 +7,6 @@
   --accent-1-5: rgba(144, 221, 240, 0.5);
   --accent-2: #f78987;
   --accent-2-5: rgba(247, 137, 135, 0.5);
-  --dark: #07393c;
 
   --font-cinzel: "Cinzel Decorative", serif;
   --font-tasa: "TASA Explorer", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
@@ -88,7 +87,7 @@ body {
 h1 {
   color: var(--color-primary);
   font-family: var(--font-tasa);
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 h2,
 h3,
@@ -100,11 +99,9 @@ p {
 
 h2 {
   text-transform: uppercase;
-  font-size: clamp(1.5rem, 3vw, 1.125rem);
 }
 
 h3 {
-  font-size: clamp(1rem, 2vw, 0.75rem);
   font-style: italic;
 }
 
@@ -112,8 +109,28 @@ p {
   font-size: clamp(0.85rem, 1.5vw, 0.75rem);
 }
 
-main {
-  padding: 2rem;
+.customSpacing {
+  & > * {
+    margin-block-start: var(--flow-space, 0.5rlh);
+  }
+
+  h2 {
+    --flow-space: 0.5rlh;
+  }
+
+  h3 {
+    --flow-space: 1rlh;
+  }
+  p + h3 {
+    --flow-space: 1rlh;
+  }
+  p + h2 {
+    --flow-space: 1.5rlh;
+  }
+
+  h3 + * {
+    --flow-space: 0.2rlh;
+  }
 }
 
 .pfPicBackScreen {
@@ -138,6 +155,12 @@ main {
   border-radius: 8px;
 }
 
+/* .header-back {
+  background: url("/SVG/asset.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+} */
 a:focus {
   outline: 2px solid var(--accent-1);
   outline-offset: 1px;

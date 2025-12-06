@@ -39,7 +39,7 @@ const List = () => {
         repeatDelay: 0.7, 
         duration:1,
       }}
-      className="flex flex-col gap-4 [&>*]:p-2 "
+      className="flex flex-col [&>*]:p-2 "
     >
       <motion.li variants={liVariants}>
         <h3 className="text-lg font-semibold">Figma</h3>

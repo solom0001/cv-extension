@@ -3,14 +3,18 @@
 const Footer = () => {
   return (
     <div id="foot" className="p-6 flex justify-center items-center border-t-1 mt-16">
-      <footer className="w-[50%] flex flex-col items-center gap-8">
-        <div className="w-full flex justify-around gap-8">
-          <p>Email:somw0001@stud.ek.dk</p>
-          <p>Tlf. +45-41400063</p>
-          <a href="https://github.com/solom0001/cv-extension" className="text-accent-2 underline">
+      <footer className="w-[100%] lg:w-[50%] flex flex-col items-center gap-8">
+        <div className="w-full lg:flex grid grid-cols-2 gap-4 justify-around gap-8 [&>*]:max-w-full">
+          <p>
+            <strong>Email:</strong>somw0001@stud.ek.dk
+          </p>
+          <p>
+            <strong>Tlf.</strong> +45-41400063
+          </p>
+          <a href="https://github.com/solom0001/cv-extension" className="text-accent-2 underline font-bold">
             Denne Sides Git Repo
           </a>
-          <a href="/newCVsolomon.pdf" target="_blank" className="text-accent-2 underline">
+          <a href="/newCVsolomon.pdf" target="_blank" className="text-accent-2 underline font-bold">
             CV
           </a>
         </div>
