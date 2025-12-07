@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 
 const PastWork = ({ desc, date, title, link, tag, img, screen }) => {
-  const isMobile = useMediaQuery({ maxWidth: 1030 });
+  const isMobile = useMediaQuery({ maxWidth: 1240 });
 
   const myVariants = {
     mobileRest: { opacity: 1, y: 0 },
