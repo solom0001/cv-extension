@@ -29,7 +29,7 @@ export default function Home() {
           "
                 description2="
           Jeg går nu på 3.sem af mit Multimedie-design studie hos EK, og kunne godt tænke mig at tag på et
-          praktikophold som front-end designer hos en brancheekspert!
+          praktikophold hos en brancheekspert!
           "
               />
             </ScrollAniDiv>
