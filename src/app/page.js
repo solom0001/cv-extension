@@ -127,9 +127,10 @@ export default function Home() {
           <TextTemp
             title="Hvem er Solomon?"
             subtitle="Lidt mere me"
-            description="Min baggrund er lidt mindre normal end den gennemsnitlige EK-studerende. Jeg kommer oprindeligt fra
-                    et lille land kaldet
-                    Uganda, og jeg taler derfor både engelsk og dansk flydende. Jeg har altid haft en passion for teknologi og kreativitet, hvilket førte mig til at studere multimediedesign."
+            description={`Min baggrund er lidt mindre normal end den gennemsnitlige EK-studerende. Jeg kommer oprindeligt fra et lille land kaldet Uganda, og jeg taler derfor både engelsk og dansk flydende. Jeg har altid haft en passion for teknologi og kreativitet, hvilket førte mig til at studere multimediedesign.
+
+                    Jeg har en stor passion for alle former for kunst, om det er tegninger, malerier, animationer eller film. Heldigvis er det emner, der ofte gør det let at falde i snak med nye mennesker :). Jeg er den ældste af fire søskende, så jeg sætter en ære i at kunne tage ansvar og have blik for de små detaljer. Og hvis du også følger med i NBA, så er jeg en ægte ride or die Golden State Warriors-fan!
+                    `}
             description2="Jeg elsker og foretrækker sunde gruppearbejde.
                 Jeg kan se mig selv både som en del af et digitalt designteam og/eller et frontend-designteam."
           />
