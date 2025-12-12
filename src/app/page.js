@@ -22,25 +22,21 @@ export default function Home() {
               <TextTemp
                 title="Hvem er jeg"
                 subtitle="En kort introduktion"
-                description="
-          Jeg er en 23-årig studerende på Erhvervsakademi København(EK).
-          Det er ikke den første vidergående uddannelse, jeg har gået på, da jeg gik 3 semestre på
-          datamatikker kurset på Cph-Business Lyngby
-          "
-                description2="
-          Jeg går nu på 3.sem af mit Multimedie-design studie hos EK, og kunne godt tænke mig at tag på et
-          praktikophold hos en brancheekspert!
+                description="Jeg er en 23-årig og studerer Multimediedesign på Erhvervsakademi København (EK). Med et fundament fra 3 semestre som datamatiker og 3 semestre som multimediedesigner tilbyder jeg stærke kompetencer indenfor digitalt design og frontend. Jeg søger en virksomhed, hvor jeg i et praktikforløb på 10 uger kan bidrage med at udvikle webløsninger.
           "
               />
             </ScrollAniDiv>
-            <div className="flex justify-end mt-4">
+            <div className="flex justify-end mt-4 gap-4">
               <DownBut title="Se mine kompetencer" route="#HJK" />
+              <a href="/CVDec25.pdf" target="_blank">
+                <DownBut title="Se Mit CV" />
+              </a>
             </div>
           </div>
         </div>
         <ScrollAniDiv>
           <div className="flex flex-col">
-            <h3 className="self-end">Mig men som moodboard</h3>
+            <h3 className="self-end">Mig som moodboard</h3>
             <div className="grid lg:grid-cols-1 grid-rows-[1fr_auto] grid-cols-[0.5fr_6fr_0.5fr] *:col-start-2 gap-1 mt-4 lg:items-center ">
               <div className="text-gray-400 text-left g order-2 lg:order-1 px-2 lg:mx-auto lg:col-start-1 ">
                 <h3 className="text-accent-1">Relevante billede kilder:</h3>
@@ -68,7 +64,7 @@ export default function Home() {
             Jeg har også kendskab til Adobe-pakken, herunder Premier Pro og illustrator og After Effects."
               description2="Gennem mit studie har jeg opnået en lang række kompetencer gennem de projektopgaver, vi har arbejdet med. Jeg har blandt andet lært, hvilken betydning farver, typografi og layout har for en hjemmeside, og hvor vigtigt disse komponenter er for brugeroplevelsen."
             />
-            <div className="flex justify-center items-center text-accent-1-5">
+            <div className="flex justify-center items-center text-accent-1">
               <StgLoopDiv />
             </div>
             <div className="text-end! ">
